@@ -1,1 +1,0 @@
-void private_static_func();

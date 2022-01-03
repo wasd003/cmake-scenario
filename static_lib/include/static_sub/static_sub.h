@@ -1,1 +1,0 @@
-int public_static_func2();
