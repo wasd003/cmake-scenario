@@ -1,8 +1,9 @@
-#include <dynamic_lib.h>
 #include <stdio.h>
 
-int main() 
-{
-    public_dynamic_func();
-    return 0;
+int main() {
+        int t = LOG_LEVEL;
+        printf("log level: %d\n", t);
+#ifdef MARCO
+        printf("marco defined\n");
+#endif
 }
