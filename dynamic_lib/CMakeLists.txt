@@ -16,5 +16,7 @@ set_target_properties(dynamic_lib PROPERTIES
     PUBLIC_HEADER include/dynamic_lib.h)
 # 配置安装路径，写相对路径就行，cmake会自动添加${CMAKE_INSTALL_PREFIX}前缀
 install(TARGETS dynamic_lib 
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR} # 安装动态库可执行文件
-    PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}) # 安装头文件,PUBLIC_HEADER是之前声明的属性
+    LIBRARY DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/install/lib # 安装动态库可执行文件
+    PUBLIC_HEADER DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/install/include) # 安装头文件,PUBLIC_HEADER是之前声明的属性
+
+# 安装方式：make之后到build目录执行make install
