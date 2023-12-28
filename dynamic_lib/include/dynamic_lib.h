@@ -1,1 +1,0 @@
-void public_dynamic_func();
